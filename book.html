@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Me - Bodybuilding 101</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="menu-button">Menu</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="train.html">How to Train</a></li>
+                    <li><a href="book.html">Book Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <img class="logo" src="images/logo.jpg" alt="A logo of a barbell and a flexing man silhouette" />
+        <h1>Book Me</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="bio" class="column">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm Max, a certified strength and fitness trainer based in
+                    Kaysville and married to the best woman in the world
+                </p>
+                <img src="Images/bio.png" alt="me with my lovely wife" class="bio-image"
+                    title="me and my lovely wife" />
+                <h3>My Journey</h3>
+                <p>
+                    I started lifting weights in 7th grade as part of my wrestling team.
+                    After college, I took up bodybuilding to fill the void left by
+                    wrestling. Over the past 7 years, I’ve lost over 100 lbs of fat and
+                    gained more than 30 lbs of muscle.
+                </p>
+                <p>
+                    Now, as a certified trainer, my goal is to help others achieve their
+                    fitness dreams by sharing the knowledge and experience I’ve gained
+                    along the way.
+                </p>
+                <h3>Why I Love Bodybuilding</h3>
+                <p>
+                    In life, it’s often hard to see yourself improve. What drew me to
+                    bodybuilding was the ability to track real, tangible changes —
+                    whether it was the weight on the bar or the number on the scale.
+                    Over time, this journey has taught me that with enough dedication
+                    and effort, you can excel at anything.
+                </p>
+            </div>
+        
+            <div id="before-after" class="column">
+                <button id="before-btn">Before</button>
+                <button id="after-btn">After</button>
+                <div id="before-photo" class="photo-section">
+                    <img src="Images/before1.jpg" alt="Before Photo 1" />
+                    <img src="Images/before2.jpg" alt="Before Photo 2" />
+                </div>
+                <div id="after-photo" class="photo-section" style="display: none">
+                    <img src="Images/after.png" alt="After Photo" />
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <div id="contact" class="column">
+                <h2>Contact Me</h2>
+                <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" />
+                    </div>
+                    <div class="form-group">
+                        <label for="knowledge">Fitness Knowledge (1-5):</label>
+                        <div class="range-container">
+                            <span>No Experience</span>
+                            <input type="range" id="knowledge" name="knowledge" min="1" max="5" step="1" />
+                            <span>Extremely Experienced</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="athletic">Athletic Level (1-5):</label>
+                        <div class="range-container">
+                            <span>Nonathletic</span>
+                            <input type="range" id="athletic" name="athletic" min="1" max="5" step="1" />
+                            <span>Extremely Athletic</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <small><i>
+                Copyright &copy; Bodybuilding101<br />
+                <a href="mailto:yaboi626max@gmail.com">yaboi626max@gmail.com</a>
+            </i></small>
+    </footer>
+    <script src="book.js" defer></script>
+</body>
+
+</html>
